@@ -40,3 +40,4 @@ jobs:
           script: |
             echo "bash /home/ec2-user/news-api/deploy.sh" | at now + 1 minute
 
+

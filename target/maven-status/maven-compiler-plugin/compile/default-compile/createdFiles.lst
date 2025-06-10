@@ -1,4 +1,4 @@
 com\example\newsapi\controller\NewsController.class
 com\example\newsapi\model\News.class
-com\example\newsapi\NewsapiApplication.class
 com\example\newsapi\repository\NewsRepository.class
+com\example\newsapi\NewsapiApplication.class
