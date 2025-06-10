@@ -22,8 +22,8 @@ jobs:
       - name: Build with Maven
         run: mvn clean package -DskipTests
 
-      - name: Copy JAR to EC2
-        uses: appleboy/scp-action@v0.1.9
+      - name: Copy jar to EC2
+        uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
@@ -32,7 +32,7 @@ jobs:
           target: "/home/ec2-user/news-api/target/"
 
       - name: Restart app on EC2
-        uses: appleboy/ssh-action@v0.1.7
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
