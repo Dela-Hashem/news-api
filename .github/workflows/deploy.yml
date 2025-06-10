@@ -31,15 +31,15 @@ jobs:
           source: "target/*.jar"
           target: "/home/ec2-user/news-api/target/"
 
-      - name: Restart app on EC2
-        uses: appleboy/ssh-action@v0.1.7
-        with:
-          host: ${{ secrets.EC2_HOST }}
-          username: ${{ secrets.EC2_USER }}
-          key: ${{ secrets.EC2_PRIVATE_KEY }}
-          script: |
-            bash /home/ec2-user/news-api/deploy.sh
-            
+#      - name: Restart app on EC2
+#        uses: appleboy/ssh-action@v0.1.7
+#        with:
+#          host: ${{ secrets.EC2_HOST }}
+#          username: ${{ secrets.EC2_USER }}
+#          key: ${{ secrets.EC2_PRIVATE_KEY }}
+#          script: |
+#            bash /home/ec2-user/news-api/deploy.sh
+
       - name: Schedule app restart on EC2
         uses: appleboy/ssh-action@v0.1.7
         with:
