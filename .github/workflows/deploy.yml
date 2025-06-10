@@ -31,7 +31,7 @@ jobs:
           source: "target/*.jar"
           target: "/home/ec2-user/news-api/target/"
 
-      - name: Schedule app restart on EC2
+      - name: Restart app on EC2
         uses: appleboy/ssh-action@v0.1.7
         with:
           host: ${{ secrets.EC2_HOST }}
@@ -39,5 +39,4 @@ jobs:
           key: ${{ secrets.EC2_PRIVATE_KEY }}
           script: |
             echo "bash /home/ec2-user/news-api/deploy.sh" | at now + 1 minute
-
-
+          
