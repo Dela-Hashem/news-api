@@ -1,0 +1,50 @@
+package com.example.newsapi.controller;
+
+import com.example.newsapi.model.News;
+import com.example.newsapi.service.NewsService;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.Optional;
+
+@RestController
+@RequestMapping("/api/news")
+public class NewsController {
+
+    private final NewsService newsService;
+
+    public NewsController(NewsService newsService) {
+        this.newsService = newsService;
+    }
+
+    @GetMapping
+    public List<News> getAllNews() {
+        return newsService.getAllNews();
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<News> getNewsById(@PathVariable Long id) {
+        Optional<News> optionalNews = newsService.getNewsById(id);
+        return optionalNews.map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
+    @PostMapping
+    public News createNews(@RequestBody News news) {
+        return newsService.createNews(news);
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<News> updateNews(@PathVariable Long id, @RequestBody News updatedNews) {
+        Optional<News> optionalNews = newsService.updateNews(id, updatedNews);
+        return optionalNews.map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteNews(@PathVariable Long id) {
+        newsService.deleteNews(id);
+        return ResponseEntity.noContent().build();
+    }
+}
