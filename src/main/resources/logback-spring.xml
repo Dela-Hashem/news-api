@@ -10,17 +10,17 @@
 
     <!-- فایل لاگ -->
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-        <file>app.log</file>
+        <file>/home/ec2-user/news-api/app.log</file>
         <append>true</append>
         <encoder>
-            <pattern>%d{yyyy-MM-dd HH:mm:ss} - [%thread] %-5level %logger{36} - %msg%n</pattern>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>
 
-    <!-- روت: هر دو خروجی -->
+    <!-- روت لاگر -->
     <root level="INFO">
-        <appender-ref ref="FILE"/>
-        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE" />
+        <appender-ref ref="CONSOLE" />
     </root>
 
 </configuration>
