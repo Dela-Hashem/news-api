@@ -46,3 +46,6 @@ jobs:
           key: ${{ secrets.EC2_PRIVATE_KEY }}
           script: |
             bash /home/ec2-user/news-api/deploy.sh
+
+      - name: List target content
+        run: ls -lh target
