@@ -2,6 +2,8 @@ package com.example.newsapi.controller;
 
 import com.example.newsapi.model.News;
 import com.example.newsapi.service.NewsService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,6 +15,7 @@ import java.util.Optional;
 public class NewsController {
 
     private final NewsService newsService;
+    private static final Logger log = LoggerFactory.getLogger(NewsController.class);
 
     public NewsController(NewsService newsService) {
         this.newsService = newsService;
@@ -20,6 +23,7 @@ public class NewsController {
 
     @GetMapping
     public List<News> getAllNews() {
+        log.info("✅ News endpoint was hit");
         return newsService.getAllNews();
     }
 
