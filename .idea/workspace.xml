@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33037c2a-969c-40f9-96be-dddd1f95ad1a" name="Changes" comment="Test action re-run" />
+    <list default="true" id="33037c2a-969c-40f9-96be-dddd1f95ad1a" name="Changes" comment="Test for change in java file , to check jar file will be updated or not">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deploy.sh" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -147,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749621339476</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Test for change in java file , to check jar file will be updated or not">
+      <option name="closed" value="true" />
+      <created>1749621833899</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1749621833899</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,6 +179,7 @@
     <MESSAGE value="Fix: edit on-push action for make it automatic to re-run" />
     <MESSAGE value="Fix: finalize logging setup with absolute path, logback config" />
     <MESSAGE value="Test action re-run" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test action re-run" />
+    <MESSAGE value="Test for change in java file , to check jar file will be updated or not" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test for change in java file , to check jar file will be updated or not" />
   </component>
 </project>
