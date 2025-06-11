@@ -10,6 +10,7 @@ on:
       - '**.sh'
       - '**.yml'
       - '**.properties'
+      - '**.sh'
 
 jobs:
   build-and-deploy:
