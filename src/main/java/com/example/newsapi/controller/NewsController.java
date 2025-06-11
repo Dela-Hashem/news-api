@@ -23,7 +23,7 @@ public class NewsController {
 
     @GetMapping
     public List<News> getAllNews() {
-        log.info("✅ News endpoint was hit");
+        log.info("✅ Test for auto 1 News endpoint was hit");
         return newsService.getAllNews();
     }
 
