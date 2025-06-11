@@ -3,6 +3,9 @@ package com.example.newsapi.model;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
+/**
+ * ِthis is the model class : Dela Hashem
+ */
 @Entity
 public class News {
 
