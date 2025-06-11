@@ -4,6 +4,12 @@ on:
   push:
     branches:
       - main
+    paths:
+      - '**.java'
+      - '**.xml'
+      - '**.sh'
+      - '**.yml'
+      - '**.properties'
 
 jobs:
   build-and-deploy:

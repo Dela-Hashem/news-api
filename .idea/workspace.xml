@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33037c2a-969c-40f9-96be-dddd1f95ad1a" name="Changes" comment="Add logback-spring.xml for file and console logging configuration">
+    <list default="true" id="33037c2a-969c-40f9-96be-dddd1f95ad1a" name="Changes" comment="Fix: set absolute log file path for EC2 logging">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749619865946</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fix: set absolute log file path for EC2 logging">
+      <option name="closed" value="true" />
+      <created>1749620387799</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749620387799</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,6 +143,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add a info log for test" />
     <MESSAGE value="Add logback-spring.xml for file and console logging configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add logback-spring.xml for file and console logging configuration" />
+    <MESSAGE value="Fix: set absolute log file path for EC2 logging" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix: set absolute log file path for EC2 logging" />
   </component>
 </project>
