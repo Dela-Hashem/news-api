@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
 
@@ -24,8 +25,10 @@ public class NewsController {
     @GetMapping
     public List<News> getAllNews() {
         log.info("✅ News endpoint was hit");
-        return newsService.getAllNews();
+//        return newsService.getAllNews();
+        return new LinkedList<>();
     }
+
 
     @GetMapping("/{id}")
     public ResponseEntity<News> getNewsById(@PathVariable Long id) {

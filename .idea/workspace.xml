@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33037c2a-969c-40f9-96be-dddd1f95ad1a" name="Changes" comment="Fix: edit on-push action for make it automatic to re-run">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="33037c2a-969c-40f9-96be-dddd1f95ad1a" name="Changes" comment="Test action re-run" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,7 +131,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749620835280</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fix: finalize logging setup with absolute path, logback config">
+      <option name="closed" value="true" />
+      <created>1749621242419</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749621242419</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Test action re-run">
+      <option name="closed" value="true" />
+      <created>1749621339476</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1749621339476</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,6 +166,8 @@
     <MESSAGE value="Add logback-spring.xml for file and console logging configuration" />
     <MESSAGE value="Fix: set absolute log file path for EC2 logging" />
     <MESSAGE value="Fix: edit on-push action for make it automatic to re-run" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix: edit on-push action for make it automatic to re-run" />
+    <MESSAGE value="Fix: finalize logging setup with absolute path, logback config" />
+    <MESSAGE value="Test action re-run" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test action re-run" />
   </component>
 </project>
