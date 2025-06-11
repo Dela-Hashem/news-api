@@ -35,8 +35,9 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_PRIVATE_KEY }}
-          source: "news-api/target/*.jar"
+          source: "target/*.jar"             # 👈 این خط باید دقیقاً این شکلی باشه
           target: "/home/ec2-user/news-api/target/"
+      
 
       - name: Restart app on EC2
         uses: appleboy/ssh-action@v0.1.7

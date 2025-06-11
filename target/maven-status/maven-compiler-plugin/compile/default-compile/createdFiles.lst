@@ -1,0 +1,6 @@
+com\example\newsapi\controller\NewsController.class
+com\example\newsapi\business\NewsBusiness.class
+com\example\newsapi\model\News.class
+com\example\newsapi\repository\NewsRepository.class
+com\example\newsapi\service\NewsService.class
+com\example\newsapi\NewsapiApplication.class

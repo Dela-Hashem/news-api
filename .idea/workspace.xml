@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33037c2a-969c-40f9-96be-dddd1f95ad1a" name="Changes" comment="Fix: edit pom.xml (build packaging)">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="33037c2a-969c-40f9-96be-dddd1f95ad1a" name="Changes" comment="Fix: edit target and jar file address">
+      <change beforePath="$PROJECT_DIR$/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deploy.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749623017467</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Fix: edit target and jar file address">
+      <option name="closed" value="true" />
+      <created>1749626568087</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1749626568087</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,6 +205,7 @@
     <MESSAGE value="Test for change in java file , to check jar file will be updated or not" />
     <MESSAGE value="Fix: Ensure deploy.sh deletes old JAR before starting new one" />
     <MESSAGE value="Fix: edit pom.xml (build packaging)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix: edit pom.xml (build packaging)" />
+    <MESSAGE value="Fix: edit target and jar file address" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix: edit target and jar file address" />
   </component>
 </project>
