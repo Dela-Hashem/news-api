@@ -36,7 +36,7 @@ public class NewsController {
         return optionalNews.map(ResponseEntity::ok)
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
-    
+
 
     @PostMapping
     public News createNews(@RequestBody News news) {
